@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   
+  <extension point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
+         <command
+               commandId="myrunner.storyrunner"
+               label="Feed to MyRunner"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="myrunner.StoryRunner"
+            id="myrunner.storyrunner"
+            name="Feed to MyRunner">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.console.consoleFactories">
+      <consoleFactory
+            class="myrunner.ConsoleFactory1"
+            label="label">
+      </consoleFactory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="myrunner.preferences.PreferencePage"
+            id="myrunner.preferences.PreferencePage"
+            name="MyRunner">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="myrunner.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   
+
+</plugin>

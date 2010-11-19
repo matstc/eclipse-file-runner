@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MyRunner
+Bundle-SymbolicName: myrunner;singleton:=true
+Bundle-Version: 0.9.1
+Bundle-Activator: myrunner.RunnerPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.eclipse.jdt;bundle-version="3.5.2",
+ org.eclipse.jdt.core,
+ org.eclipse.jdt.launching,
+ org.eclipse.debug.core
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
