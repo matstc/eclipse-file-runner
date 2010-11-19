@@ -1,0 +1,4 @@
+This is an Eclipse plugin that can launch a file using a custom launcher specified in the preferences.
+
+To install it, take the deploy/myrunner_0.9.1.jar file and put it in Eclipse's plugins directory.
+
